@@ -1,1 +1,1 @@
-# jornal.io
+# journal.io

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header orange-bgc">
+        <div class="wrapper" id="header">
+            <img src="images/logo.png" alt="logo" class="naming logo">
+            <p class="title white">Электронная роспись</p>
+            <div class="languages">
+                <a href="#" class="ru white bold">Ru</a>
+                <a href="#" class="en white bold">En</a>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="wrapper" id="wrapper">
+            <div class="grid">
+                <div id="in2" class="in2 card-bgc">
+                    <p class="title orange">Войти</p>
+                    <form action="" class="forma">
+                        <input type="text" id="Email" class="login_pole E-mail" placeholder="Логин. Например: st000000@student.spbu.ru">
+                        <input type="password" id="Password" class="login_pole password" placeholder="Пароль. Например: 00000000">
+                    </form>
+                    <div class="">
+                        <button onclick="login()" class="login_submit mid-text white orange-bgc medium">Войти</button>
+                        <a onclick="bbb()" class="nadpis orange mini-text">Зарегестрироваться</a>
+                    </div>
+                </div>
+
+
+                <div id="in" class="in card-bgc">
+                    <p class="title orange">Регистрация</p>
+                    <form action="" class="forma">
+                        <input type="text" id="Emai" class="login_pole E-mail" placeholder="Логин. Например: st000000@student.spbu.ru">
+                        <input type="password" id="Passwor" class="login_pole password" placeholder="Пароль. Например: 00000000">
+                        <input type="text" id="Name" class="login_pole" placeholder="Имя">
+                        <input type="text" id="secName" class="login_pole" placeholder="Фамилия">
+                        <input type="text" id="Room" class="login_pole" placeholder="Комната">
+                    </form>
+                    <button onclick="create_accaunt()" class="login_submit mid-text white orange-bgc medium">Зарегестрироваться</button>
+                    <a onclick="aaa()" class="nadpis orange mini-text">Уже есть аккаунт? Войти</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="footer orange-bgc">
+        <div id="footer" class="wrapper">
+            <p class="">©2021 | Journal Project | All Rights Receved | Do by <a href="https://vk.com/v_ad_im_cha" class="white">Vadik</a> and <a href="https://vk.com/tsueubaev" class="white">Tima</a></p>
+        </div>
+    </div>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.1.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.1.2/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.1.2/firebase-auth-compat.js"></script>
+<script>
+    const firebaseApp = firebase.initializeApp({
+        apiKey: "AIzaSyBIt004MBqkeI4b7pz24oYpurHiyUaNil8",
+        authDomain: "basr-d0079.firebaseapp.com",
+        databaseURL: "https://basr-d0079-default-rtdb.firebaseio.com",
+        projectId: "basr-d0079",
+        storageBucket: "basr-d0079.appspot.com",
+        messagingSenderId: "250883445973",
+        appId: "1:250883445973:web:c200dd55f9dfd739e0fe5c",
+        measurementId: "G-3M0ZDER1R6"
+    });
+    const db = firebaseApp.firestore();
+    const auth = firebaseApp.auth();
+</script>
+
+<script src="main2.js"></script>
+
+</html>

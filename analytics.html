@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style_for_analitic/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header orange-bgc">
+        <div class="wrapper" id="header">
+            <p class="title white">Электронная роспись</p>
+        </div>
+    </div>
+    <div class="main">
+        <div class="wrapper" id="wrapper">
+            <div class="dont">
+                <a href="#" onclick="t()" id="not_active" class="nadpic_dont bold title white">Нерасписавшиеся</a>
+            </div>
+            <table class="analitics1 donts">
+                <tr>
+                    <th>Студент</th>
+                    <th>Комната</th>
+                    <th>Время выхода</th>
+                    <th>Дата выхода</th>
+                    <th>Время прихода</th>
+                    <th>Дата прихода</th>
+                </tr>
+                <tr>
+                    <td>Вадим Белов</td>
+                    <td>247</td>
+                    <td>17:00</td>
+                    <td>11.11.11</td>
+                    <td>18:00</td>
+                    <td>12.11.11</td>
+                </tr>
+                <!-- Здесь подключаем файл с импортом данными в виде
+                <tr>
+                    <td>#Студент#</td>
+                    <td>#Комната#</td>
+                    <td>#Время выхода#</td> 
+                    <td>#Дата выхода#</td>
+                    <td>#Время прихода#</td>
+                    <td>#Дата прихода#</td>
+                </tr>
+                -->
+            </table>
+            <div class="dont">
+                <a href="#" onclick="r()" id="not_active" class="nadpic_dont_2 bold title white">Расписавшиеся</a>
+            </div>
+            <table class="analitics2">
+                <tr>
+                    <th>Студент</th>
+                    <th>Комната</th>
+                    <th>Время выхода</th>
+                    <th>Дата выхода</th>
+                    <th>Время прихода</th>
+                    <th>Дата прихода</th>
+                </tr>
+                <tr>
+                    <td>Вадим Белов</td>
+                    <td>247</td>
+                    <td>17:00</td>
+                    <td>11.11.11</td>
+                    <td>18:00</td>
+                    <td>12.11.11</td>
+                </tr>
+                <!-- Здесь подключаем файл с импортом данными в виде
+                <tr>
+                    <td>#Студент#</td>
+                    <td>#Комната#</td>
+                    <td>#Время выхода#</td>
+                    <td>#Дата выхода#</td>
+                    <td>#Время прихода#</td>
+                    <td>#Дата прихода#</td>
+                </tr>
+                -->
+            </table>
+
+        </div>
+    </div>
+    <div class="footer orange-bgc">
+        <div id="footer" class="wrapper">
+            <p class="">©2021 | Journal Project | All Rights Receved | Do by <a href="https://vk.com/v_ad_im_cha" class="white">Vadik</a> and <a href="https://vk.com/tsueubaev" class="white">Tima</a></p>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.2/firebase-app-compat.js" type="text/javascript" type="module"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.2/firebase-firestore-compat.js" type="text/javascript" type="module"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.2/firebase-autd-compat.js" type="text/javascript" type="module"></script>
+    <script src="analitic.js"></script>
+    <script src="main++.js"></script>
+    <script src="readdbfile.js"></script>
+</body>
+
+</html>

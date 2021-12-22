@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header orange-bgc">
+        <div class="wrapper" id="header">
+            <img src="images/logo.png" alt="logo" class="naming logo">
+            <p class="title white">Электронная роспись</p>
+            <div class="languages">
+                <a href="#" class="ru white bold">Ru</a>
+                <a href="#" class="en white bold">En</a>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="wrapper" id="wrapper">
+            <div class="grid2">
+                <div class="out card-bgc">
+                    <p class="title orange">Выход из общежития</p>
+                    <div class="parametrs flex">
+                        <p class="name orange semi-bold mid-text">Причина</p>
+                        <form action="" class="flex">
+                            <select name="" id="flex" class="pole">
+                                    <option value="В магазин">В магазин</option>
+                                    <option value="Гулять">Гулять</option>
+                                    <option value="К родителям(законному представителю)">К родителям(законному представителю)</option>
+                                    <option value="Другое">Другое</option>
+                                </select>
+                        </form>
+                    </div>
+                    <!-- <div class="parametrs flex">
+                        <p class="name semi-bold orange mid-text">Дата ухода</p>
+                        <form action="" class="flex">
+                            <input type="date" id="start" class="pole" name="trip-start" value="2021-10-11">
+                        </form>
+                    </div> -->
+
+                    <div class="parametrs flex">
+                        <p class="name semi-bold orange mid-text">Время ухода</p>
+                        <form action="" class="flex">
+                            <input type="time" id="time" class="pole">
+                        </form>
+                    </div>
+
+                    <div class="parametrs flex">
+                        <p class="name semi-bold orange mid-text">Дата прихода</p>
+                        <form action="" class="flex">
+                            <input type="date" class="pole" id="end" name="trip-start" value="2021-10-11">
+                        </form>
+                    </div>
+
+                    <div class="parametrs flex">
+                        <p class="name semi-bold orange mid-text">Время прихода</p>
+                        <form action="" class="flex">
+                            <div class="">
+                                <input type="time" id="time_end" class="pole">
+                            </div>
+                        </form>
+                    </div>
+                    <a onclick="adddb()" id="ad" href="#" class="ready white orange-bgc title medium">Отметиться</a>
+                    <a id='vinfo' class="nadpis orange mini-text">Верифицируйте аккаунт</a>
+                </div>
+                <div class="last-out card-bgc">
+                    <p class="title orange">Последний выход</p>
+                    <p id="wt" class="dating mid-text">-</p>
+                    <p id="dt" class="dating mid-text">-</p>
+                    <p id="tt" class="timing mid-text">-</p>
+                    <a href="#" id="check" class="ready white orange-bgc title medium">Расписаться</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer orange-bgc">
+        <div id="footer" class="wrapper">
+            <p class="">©2021 | Journal Project | All Rights Receved | Do by <a href="https://vk.com/v_ad_im_cha" class="white">Vadik</a> and <a href="https://vk.com/tsueubaev" class="white">Tima</a></p>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.2/firebase-app-compat.js" type="text/javascript" type="module"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.2/firebase-firestore-compat.js" type="text/javascript" type="module"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.2/firebase-auth-compat.js" type="text/javascript" type="module"></script>
+    <script src="main++.js"></script>
+    <script src="readdbfile.js"></script>
+</body>
+
+</html>
